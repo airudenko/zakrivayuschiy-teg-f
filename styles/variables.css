@@ -1,6 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --main-font: "Inter-Variable", sans-serif;
+  --main-font: "Inter", sans-serif;
   --font-family: "Press Start 2P", sans-serif;
   --weight-title: 700;
   --weight-text: 400;
@@ -10,6 +10,7 @@
   --difference-color:#ffffff;
   --heart-contour: #000000;
   --sparks-fill:#FF0000;
+  --list-margin: clamp(3.125rem, 3.037rem + 0.3756vw, 3.375rem);
   --bg-img: repeating-linear-gradient(
       to right,
       #d3d3d3,
