@@ -104,6 +104,7 @@
   position: absolute;
   right: 96px;
   top: 0;
+  animation: bottom 0.5s ease-in-out infinite alternate;
 }
 
 .cards__list-item {
@@ -243,13 +244,13 @@
   padding-bottom: 15px;
 }
 
-.theme-menu__button:disabled::before {
+/* .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
   right: 96px;
   top: 0;
   animation: bottom 0.5s ease-in-out infinite alternate;
-}
+} */
 
 .theme-menu__button:hover,
 .theme-menu__button:disabled {
@@ -521,11 +522,6 @@
 
 .grayscale {
   filter: grayscale(0.8);
-}
-
-.cards__subtitle,
-.cards__desc-text {
-  font-variation-settings: "wdth" var(--weight-title), "wgth" var(--weight-text);
 }
 
 @media (width <= 375px) {
