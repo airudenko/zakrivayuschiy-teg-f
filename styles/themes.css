@@ -4,3 +4,144 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-light {
+  --main-font: "Inter", sans-serif;
+  --font-family: "Press Start 2P", sans-serif;
+  --weight-title: 700;
+  --weight-text: 400;
+  --bg-color: #ffffff;
+  --accent-color: #000000;
+  --text-stroke:#ffffff;
+  --difference-color:#ffffff;
+  --heart-contour: #000000;
+  --sparks-fill:#FF0000;
+  --bg-img: repeating-linear-gradient(
+      to right,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+}
+
+.page.theme_light {
+  --main-font: "Inter", sans-serif;
+  --font-family: "Press Start 2P", sans-serif;
+  --weight-title: 700;
+  --weight-text: 400;
+  --bg-color: #ffffff;
+  --accent-color: #000000;
+  --text-stroke:#ffffff;
+  --difference-color:#ffffff;
+  --heart-contour: #000000;
+  --sparks-fill:#FF0000;
+  --bg-img: repeating-linear-gradient(
+      to right,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+}
+
+:root.theme-dark {
+  --main-font: "Inter", sans-serif;
+  --font-family: "Press Start 2P", sans-serif;
+  --weight-title: 785;
+  --weight-text: 465;
+  --bg-color: #000000;
+  --accent-color: #00cc14;
+  --text-stroke:#000000;
+  --difference-color:#00cc14;
+  --heart-contour: #00cc14;
+  --sparks-fill:#FF0000;
+  --bg-img: repeating-linear-gradient(
+      to right,
+      #000,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #000,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #007f0c 0.01%, #004306);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-font: "Inter", sans-serif;
+    --font-family: "Press Start 2P", sans-serif;
+    --weight-title: 785;
+    --weight-text: 465;
+    --bg-color: #000000;
+    --accent-color: #00cc14;
+    --text-stroke:#000000;
+    --difference-color:#00cc14;
+    --heart-contour: #00cc14;
+    --sparks-fill:#FF0000;
+    --bg-img: repeating-linear-gradient(
+        to right,
+        #000,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        #000,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      linear-gradient(to bottom, #007f0c 0.01%, #004306);
+  }
+}
+
+.page.theme_dark {
+  --main-font: "Inter", sans-serif;
+  --font-family: "Press Start 2P", sans-serif;
+  --weight-title: 785;
+  --weight-text: 465;
+  --bg-color: #000000;
+  --accent-color: #00cc14;
+  --text-stroke:#000000;
+  --difference-color:#00cc14;
+  --heart-contour: #00cc14;
+  --sparks-fill:#FF0000;
+  --bg-img: repeating-linear-gradient(
+      to right,
+      #000,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #000,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #007f0c 0.01%, #004306);
+}
