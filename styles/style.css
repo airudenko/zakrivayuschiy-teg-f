@@ -28,19 +28,14 @@
   padding-right: clamp(0rem, -8.1866rem + 34.9296vw, 23.25rem);
   padding-left: clamp(0rem, -8.1866rem + 34.9296vw, 23.25rem);
   /* font-variation-settings: "wgth" var(--weight-title), "wgth" var(--weight-text); */
-  font-variation-settings: "wgth" 465, "wgth" 785 "wgth" 400, "wgth" 700;
+  font-variation-settings: "wght" 400, "wght" 700, "wdth" 100, "wdth" 200;
 }
 
 @supports (font-variation-settings: normal) {
   .page {
     font-family: "Inter", sans-serif;
-    font-variation-settings: "wgth" 465, "wgth" 785 "wgth" 400, "wgth" 700;
   }
 }
-
-/* .page {
-  font-variation-settings: "wgth" var(--weight-title), "wgth" var(--weight-text);
-} */
 
 .header {
   width: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
@@ -114,7 +109,6 @@
   width: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
   color: var(--accent-color);
   background-color: var(--bg-color);
-  /* margin-bottom: var(--list-margin); */
 }
 
 .cards__list-item:not(:last-child) {
@@ -245,14 +239,6 @@
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
-/* .theme-menu__button:disabled::before {
-  content: "▶";
-  position: absolute;
-  right: 96px;
-  top: 0;
-  animation: bottom 0.5s ease-in-out infinite alternate;
-} */
 
 .theme-menu__button:hover,
 .theme-menu__button:disabled {
