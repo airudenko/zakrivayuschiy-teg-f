@@ -27,7 +27,7 @@
   padding-block-end: clamp(6.375rem, 6.309rem + 0.2817vw, 6.5625rem);
   padding-inline-end: clamp(0rem, -8.1866rem + 34.9296vw, 23.25rem);
   padding-inline-start: clamp(0rem, -8.1866rem + 34.9296vw, 23.25rem);
-  font-variation-settings: "wgth" var(--weight-title), "wgth" var(--weight-text);
+  font-variation-settings: "wgth" 400, "wgth" 785;
 }
 
 @supports (font-variation-settings: normal) {
