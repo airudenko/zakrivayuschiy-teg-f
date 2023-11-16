@@ -23,12 +23,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding-top: 102px;
-  padding-bottom: clamp(6.375rem, 6.309rem + 0.2817vw, 6.5625rem);
-  padding-right: clamp(0rem, -8.1866rem + 34.9296vw, 23.25rem);
-  padding-left: clamp(0rem, -8.1866rem + 34.9296vw, 23.25rem);
-  /* font-variation-settings: "wgth" var(--weight-title), "wgth" var(--weight-text); */
-  font-variation-settings: "wght" 400, "wght" 700, "wdth" 100, "wdth" 200;
+  padding-block-start: 102px;
+  padding-block-end: clamp(6.375rem, 6.309rem + 0.2817vw, 6.5625rem);
+  padding-inline-end: clamp(0rem, -8.1866rem + 34.9296vw, 23.25rem);
+  padding-inline-start: clamp(0rem, -8.1866rem + 34.9296vw, 23.25rem);
 }
 
 @supports (font-variation-settings: normal) {
@@ -38,15 +36,15 @@
 }
 
 .header {
-  width: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
-  height: clamp(20.1875rem, 19.2852rem + 3.8498vw, 22.75rem);
+  inline-size: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+  block-size: clamp(20.1875rem, 19.2852rem + 3.8498vw, 22.75rem);
   background-color: var(--bg-color);
   outline: 2px solid var(--accent-color);
-  padding-bottom: 25px;
+  padding-block-end: 25px;
   display: flex;
   justify-content: center;
-  padding-top: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
-  margin-bottom: 107px;
+  padding-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
+  margin-block-end: 107px;
 }
 
 .header__box {
@@ -60,7 +58,7 @@
   font-family: var(--font-family);
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   font-weight: var(--weight-text);
-  padding-bottom: 17px;
+  padding-block-end: 17px;
   line-height: normal;
 }
 
@@ -69,15 +67,15 @@
   font-family: var(--font-family);
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   font-weight: var(--weight-text);
-  padding-bottom: 25px;
+  padding-block-end: 25px;
   line-height: normal;
 }
 
 .theme-menu__list {
-  padding-left: 19px;
+  padding-inline-start: 19px;
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 7px;
 }
 
 .theme-menu__item {
@@ -106,13 +104,13 @@
 
 .cards__list-item {
   outline: 2px solid var(--accent-color);
-  width: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+  inline-size: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
   color: var(--accent-color);
   background-color: var(--bg-color);
 }
 
 .cards__list-item:not(:last-child) {
-  margin-bottom: var(--list-margin);
+  margin-block-end: var(--list-margin);
 }
 
 .cards__subtitle {
@@ -120,18 +118,18 @@
   font-size: 18px;
   font-weight: var(--weight-title);
   line-height: normal;
-  padding-left: 10px;
-  padding-top: 2px;
-  padding-bottom: 7px;
-  width: clamp(22.625rem, 16.0229rem + 28.169vw, 41.375rem);
+  padding-inline-start: 10px;
+  padding-block-start: 2px;
+  padding-block-end: 7px;
+  inline-size: clamp(22.625rem, 16.0229rem + 28.169vw, 41.375rem);
 }
 
 .cards__img {
   display: block;
   object-fit: cover;
   object-position: center;
-  width: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
-  height: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
+  inline-size: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+  block-size: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
 }
 
 .cards__desc {
@@ -186,7 +184,7 @@
 .like {
   display: flex;
   align-items: flex-end;
-  padding-top: 2px;
+  padding-block-start: 2px;
   gap: 7px;
   position: relative;
 }
@@ -198,8 +196,8 @@
 }
 
 .like-icon {
-  width: 39px;
-  height: 32px;
+  inline-size: 39px;
+  block-size: 32px;
 }
 
 .card__like-button {
@@ -223,7 +221,7 @@
 }
 
 .save {
-  width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
+  inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   display: flex;
   justify-content: center;
   background-color: var(--bg-color);
@@ -236,8 +234,8 @@
 }
 
 .button__box {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-block-start: 15px;
+  padding-block-end: 15px;
 }
 
 .theme-menu__button:hover,
@@ -253,16 +251,16 @@
 .theme-menu__button::after {
   content: "";
   display: block;
-  width: 0%;
-  height: 2px;
-  margin-bottom: 3px;
+  inline-size: 0%;
+  block-size: 2px;
+  margin-block-end: 3px;
   background-color: var(--accent-color);
   transform: scaleX(0);
-  transition: width ease 0.3s;
+  transition: inline-size ease 0.3s;
 }
 
 .theme-menu__button:focus::after {
-  width: 100%;
+  inline-size: 100%;
   transform: scaleX(1);
 }
 
@@ -323,7 +321,6 @@
   outline: none;
 }
 
-/* было хорошо */
 .card__icon-button:focus-visible {
   outline: 2px solid var(--accent-color);
   transition: outline ease 0.3s;
@@ -333,8 +330,6 @@
   transition: fill 0.3s linear;
   transform-origin: center;
 }
-
-/* Идеальный вариант */
 
 .heart .main-body {
   transition: fill 0.3s linear, opacity 0.3s linear;
@@ -358,8 +353,6 @@
   opacity: 1;
 }
 
-/* ЭКТИВ */
-
 .card__icon-button:active .heart .main-body {
   fill: var(--sparks-fill);
   opacity: 1;
@@ -370,8 +363,6 @@
   transition: fill 0.3s 0.05s linear, opacity 0.3s 0.05s linear;
   opacity: 1;
 }
-
-/* Клик */
 
 .like-icon.is-liked .main-body {
   fill: var(--sparks-fill);
@@ -389,8 +380,6 @@
   transition: fill 0.3s linear 0.06s;
 }
 
-/* Анимация масштабирования сердца */
-
 .is-liked .heart {
   animation: heart 0.3s ease-in 0.1s both;
 }
@@ -406,8 +395,6 @@
     transform: scale(1);
   }
 }
-
-/* Возвращение контура обратно */
 
 :not(.is-liked) .contour {
   fill: var(--heart-contour);
@@ -437,13 +424,13 @@
 .footer {
   display: flex;
   justify-content: center;
-  padding-top: 54px;
+  padding-block-start: 54px;
 }
 
 .dialog__open {
   background-color: var(--bg-color);
-  width: clamp(21.3125rem, 20.9604rem + 1.5023vw, 22.3125rem);
-  height: clamp(12.1875rem, 12.2315rem + -0.1878vw, 12.0625rem);
+  inline-size: clamp(21.3125rem, 20.9604rem + 1.5023vw, 22.3125rem);
+  block-size: clamp(12.1875rem, 12.2315rem + -0.1878vw, 12.0625rem);
 }
 
 .floppy-size {
@@ -454,17 +441,17 @@
 .dialog__box {
   display: flex;
   gap: 20px;
-  width: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
+  inline-size: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
   align-items: center;
 }
 
 .dialog__button {
-  width: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
-  height: 38px;
+  inline-size: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
+  block-size: 38px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-block-start: 30px;
 }
 
 .text-style {
@@ -515,6 +502,6 @@
 @media (width <= 375px) {
   .header,
   .cards__list-item {
-    width: 100vw;
+    inline-size: 100vw;
   }
 }

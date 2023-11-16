@@ -11,10 +11,10 @@
   --weight-text: 400;
   --bg-color: #ffffff;
   --accent-color: #000000;
-  --text-stroke:#ffffff;
-  --difference-color:#ffffff;
+  --text-stroke: #ffffff;
+  --difference-color: #ffffff;
   --heart-contour: #000000;
-  --sparks-fill:#FF0000;
+  --sparks-fill: #ff0000;
   --list-margin: clamp(3.125rem, 3.037rem + 0.3756vw, 3.375rem);
   --bg-img: repeating-linear-gradient(
       to right,
@@ -40,10 +40,10 @@
   --weight-text: 400;
   --bg-color: #ffffff;
   --accent-color: #000000;
-  --text-stroke:#ffffff;
-  --difference-color:#ffffff;
+  --text-stroke: #ffffff;
+  --difference-color: #ffffff;
   --heart-contour: #000000;
-  --sparks-fill:#FF0000;
+  --sparks-fill: #ff0000;
   --list-margin: clamp(3.125rem, 3.037rem + 0.3756vw, 3.375rem);
   --bg-img: repeating-linear-gradient(
       to right,
@@ -69,10 +69,10 @@
   --weight-text: 465;
   --bg-color: #000000;
   --accent-color: #00cc14;
-  --text-stroke:#000000;
-  --difference-color:#00cc14;
+  --text-stroke: #000000;
+  --difference-color: #00cc14;
   --heart-contour: #00cc14;
-  --sparks-fill:#FF0000;
+  --sparks-fill: #ff0000;
   --list-margin: clamp(3.125rem, 3.037rem + 0.3756vw, 3.375rem);
   --bg-img: repeating-linear-gradient(
       to right,
@@ -99,10 +99,10 @@
     --weight-text: 465;
     --bg-color: #000000;
     --accent-color: #00cc14;
-    --text-stroke:#000000;
-    --difference-color:#00cc14;
+    --text-stroke: #000000;
+    --difference-color: #00cc14;
     --heart-contour: #00cc14;
-    --sparks-fill:#FF0000;
+    --sparks-fill: #ff0000;
     --list-margin: clamp(3.125rem, 3.037rem + 0.3756vw, 3.375rem);
     --bg-img: repeating-linear-gradient(
         to right,
@@ -129,10 +129,10 @@
   --weight-text: 465;
   --bg-color: #000000;
   --accent-color: #00cc14;
-  --text-stroke:#000000;
-  --difference-color:#00cc14;
+  --text-stroke: #000000;
+  --difference-color: #00cc14;
   --heart-contour: #00cc14;
-  --sparks-fill:#FF0000;
+  --sparks-fill: #ff0000;
   --list-margin: clamp(3.125rem, 3.037rem + 0.3756vw, 3.375rem);
   --bg-img: repeating-linear-gradient(
       to right,
