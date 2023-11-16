@@ -6,7 +6,8 @@
   src: url("../fonts/Inter-Variable.woff2") format("woff2 supports variations"),
     url("../fonts/Inter-Variable.woff2") format("woff2-variations");
   font-weight: 400 700 785 465;
-  font-variation-settings: "wght" 400, "wght" 700 "wdth" 100, "wdth" 200;
+  /* font-variation-settings: "wght" 400, "wght" 700 "wdth" 100, "wdth" 200; */
+   font-variation-settings: "wght" 465, "wght" 785 "wdth" 100, "wdth" 200;
 }
 
 @font-face {
