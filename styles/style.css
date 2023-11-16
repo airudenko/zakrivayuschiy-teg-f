@@ -30,14 +30,13 @@
 }
 
 @supports (font-variation-settings: normal) {
-  page {
+  .page {
     font-family: "Inter", sans-serif;
   }
 }
 
-.cards__subtitle,
-.cards__desc-text {
-  font-variation-settings: "wdth" var(--weight-title), "wgth" var(--weight-text);
+.page {
+  font-variation-settings: "wgth" var(--weight-title), "wgth" var(--weight-text);
 }
 
 .header {
