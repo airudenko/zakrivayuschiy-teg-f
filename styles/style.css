@@ -26,6 +26,7 @@
   padding-block-start: 102px;
   padding-inline-end: clamp(0rem, -8.1866rem + 34.9296vw, 23.25rem);
   padding-inline-start: clamp(0rem, -8.1866rem + 34.9296vw, 23.25rem);
+  font-variation-settings: "wgth" var(--weight-title), "wgth" var(--weight-text);
   inline-size: 100%;
   margin: 0 auto;
   block-size: clamp(465.1875rem, 429.36rem + 152.8638vw, 566.9375rem);
@@ -127,7 +128,6 @@
   padding-block-end: 7px;
   border-block-end: 2px solid var(--accent-color);
   inline-size: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
-  font-variation-settings: "wgth" var(--weight-title);
 }
 
 .cards__img {
@@ -154,7 +154,6 @@
   line-height: 116.667%;
   display: flex;
   flex-direction: column;
-  font-variation-settings: "wgth" var(--weight-text);
   gap: 27px;
 }
 
