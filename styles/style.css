@@ -26,9 +26,9 @@
   padding-block-start: 102px;
   padding-inline-end: clamp(0rem, -8.1866rem + 34.9296vw, 23.25rem);
   padding-inline-start: clamp(0rem, -8.1866rem + 34.9296vw, 23.25rem);
+  font-variation-settings: "wgth" var(--weight-title), "wgth" var(--weight-text);
   inline-size: 100%;
   margin: 0 auto;
-  font-variation-settings: "wgth" var(--weight-title), "wgth" var(--weight-text);
 }
 
 @supports (font-variation-settings: normal) {
