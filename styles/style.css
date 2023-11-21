@@ -26,15 +26,14 @@
   padding-block-start: 102px;
   padding-inline-end: clamp(0rem, -8.1866rem + 34.9296vw, 23.25rem);
   padding-inline-start: clamp(0rem, -8.1866rem + 34.9296vw, 23.25rem);
-  font-variation-settings: "wgth" var(--weight-title), "wgth" var(--weight-text);
   inline-size: 100%;
   margin: 0 auto;
-  block-size: clamp(465.1875rem, 429.36rem + 152.8638vw, 566.9375rem);
+  font-variation-settings: "wgth" var(--weight-title), "wgth" var(--weight-text);
 }
 
 @supports (font-variation-settings: normal) {
   .page {
-    font-family: "Inter", sans-serif;
+    font-family: var(--main-font), sans-serif;
   }
 }
 
@@ -208,7 +207,10 @@
 }
 
 .card__like-button {
-  padding: 7.5px 35px;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  padding: 10.5px 35px;
 }
 
 .save,
@@ -249,23 +251,13 @@
 .save,
 .card__like-button {
   position: relative;
-  overflow: hidden;
-}
-
-.save::before,
-.card__like-button::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: var(--difference-color);
-  mix-blend-mode: difference;
-  translate: -100% 0%;
 }
 
 .footer {
   display: flex;
   justify-content: center;
   padding-block-start: 54px;
+  padding-block-end: 105px;
 }
 
 .dialog__open {
@@ -363,6 +355,10 @@
   .floppy-size {
     max-inline-size: 39px;
     max-block-size: 39px;
+  }
+
+  .footer {
+    padding-block-end: 102px;
   }
 }
 

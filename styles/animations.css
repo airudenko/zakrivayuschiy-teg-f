@@ -61,16 +61,6 @@
   }
 }
 
-@keyframes difference {
-  from {
-    translate: -100% 0%;
-  }
-
-  to {
-    translate: 0% 0%;
-  }
-}
-
 .save:focus,
 .card__like-button:focus {
   outline: none;
@@ -78,9 +68,23 @@
   transition: box-shadow ease 0.3s;
 }
 
+.save::before,
+.card__like-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--difference-color);
+  mix-blend-mode: difference;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
 .save:hover::before,
 .card__like-button:hover::before {
-  animation: difference 0.5s ease-in-out forwards;
+  transform: scaleX(1);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left;
 }
 
 .card__icon-button:focus {
